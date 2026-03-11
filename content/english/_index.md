@@ -1,53 +1,50 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jump-start your Hugo project and save valuable time."
+  title: "Engineering Scalable Software Solutions"
+  content: "Seasoned engineer crafting top-tier software solutions. Focused on delivering high-value products through technical excellence and collaborative teamwork."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Fork Deploy and Edit Online 🚀"
-    link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/"
+    label: "View Solutions"
+    link: "/blog"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "System Design"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: "Microservices, Event-Driven Architecture, CQRS."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Scalable Architecture"
+      - "High Concurrency Systems"
+      - "Clean and Maintainable Boundaries"
     button:
       enable: false
-      label: "Get Started Now"
-      link: "#"
+      label: ""
+      link: ""
 
-  - title: "Discover the Key Features Of Hugo"
+  - title: "Golang Expert"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "Concurrency patterns, performance tuning, memory management."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Goroutines and Channels"
+      - "gRPC Microservices"
+      - "Sub-100ms Latency Tuning"
     button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      enable: false
+      label: ""
+      link: ""
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+  - title: "Infrastructure & Data Consistency"
     image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Building robust cloud-native applications with strong data guarantees."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "AWS (EC2, ECS, Lambda), GCP, Docker, CI/CD Pipelines."
+      - "Distributed Transactions (Saga)"
+      - "PostgreSQL, Redis, RabbitMQ."
     button:
       enable: false
       label: ""
       link: ""
 ---
+
