@@ -162,3 +162,11 @@ lazy = true
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js" # https://github.com/gethugothemes/hugo-modules/tree/master/videos
 lazy = true
+
+[[params.plugins.js]]
+link = "https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"
+lazy = false
+
+[[params.plugins.js]]
+link = "js/zoom-mermaid.js"
+lazy = true
