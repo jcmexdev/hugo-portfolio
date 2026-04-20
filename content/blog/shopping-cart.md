@@ -6,13 +6,13 @@ date: 2026-02-05T05:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["App", "React Native"]
 author: "Juan Carlos Garcia"
-tags: ["React Native", "Expo"]
+tags: ["React Native", "Expo", "App", "Mobile"]
 draft: false
 ---
 
 ### Descripción del Proyecto
 
-**Carrito de Compras Simple** es una aplicación móvil desarrollada con React Native y Expo, diseñada para ofrecer una experiencia intuitiva, rápida y fluida en la gestión de compras y catálogos de productos.
+{{< notice "info" >}} **Carrito de Compras Simple** es una aplicación móvil desarrollada con React Native y Expo, diseñada para ofrecer una experiencia intuitiva, rápida y fluida en la gestión de compras y catálogos de productos. {{< /notice >}}
 
 El objetivo principal de la aplicación es facilitar a los usuarios la creación y administración de listas de compras detalladas, al mismo tiempo que les permite llevar un registro de diferentes tiendas y los productos asignados a ellas. Esto sienta las bases para futuras implementaciones de comparación de precios.
 

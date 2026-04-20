@@ -6,7 +6,7 @@ image: "/merge_sort_cover.png"
 tags: ["algorithms", "sorting", "Go", "programming"]
 ---
 
-El algoritmo **Merge Sort** (u Ordenamiento por Mezcla) es uno de los pilares del ordenamiento en ciencias de la computación. Basado matemáticamente en el paradigma **Divide y Vencerás**, se destaca como una herramienta extremadamente poderosa cuando requerimos estabilidad y rendimiento garantizado.
+{{< notice "note" >}} El algoritmo **Merge Sort** (u Ordenamiento por Mezcla) es uno de los pilares del ordenamiento en ciencias de la computación. Basado matemáticamente en el paradigma **Divide y Vencerás**, se destaca como una herramienta extremadamente poderosa cuando requerimos estabilidad y rendimiento garantizado. {{< /notice >}}
 
 En este artículo, exploraremos qué lo hace tan especial, cómo implementarlo de manera limpia y una táctica avanzada para optimizar su consumo de memoria en entornos de producción.
 

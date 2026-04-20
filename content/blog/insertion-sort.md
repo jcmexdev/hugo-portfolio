@@ -6,7 +6,7 @@ image: "/insertion_sort_cover_copy.png"
 tags: ["algorithms", "sorting", "Go", "programming"]
 ---
 
-El **Insertion Sort** (u Ordenamiento por Inserción) es uno de los algoritmos de ordenamiento más intuitivos en ciencias de la computación. Si alguna vez has organizado una mano de cartas de póker o baraja española, ya conoces la lógica maestra detrás de este algoritmo. Funciona tomando los elementos uno por uno y encontrando su posición correcta entre los elementos que ya han sido revisados.
+{{< notice "note" >}} El **Insertion Sort** (u Ordenamiento por Inserción) es uno de los algoritmos de ordenamiento más intuitivos en ciencias de la computación. Si alguna vez has organizado una mano de cartas de póker o baraja española, ya conoces la lógica maestra detrás de este algoritmo. Funciona tomando los elementos uno por uno y encontrando su posición correcta entre los elementos que ya han sido revisados. {{< /notice >}}
 
 Si bien a primera vista parece un algoritmo introductorio, guarda secretos fascinantes de eficiencia y arquitectura que lo hacen vital en herramientas y lenguajes computacionales modernos.
 

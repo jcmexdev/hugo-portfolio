@@ -10,7 +10,7 @@ tags: ["SOA", "Microservicios", "Arquitectura de Software"]
 draft: false
 ---
 
-En el ecosistema del desarrollo de software, pocos debates son tan intensos como la elección del estilo arquitectónico. Durante años, **Service-Oriented Architecture (SOA)** fue el estándar de oro para la integración empresarial. Sin embargo, con el auge de la nube y el DevOps, los **Microservicios** han reclamado el trono. 
+{{< notice "note" >}} En el ecosistema del desarrollo de software, pocos debates son tan intensos como la elección del estilo arquitectónico. Durante años, **Service-Oriented Architecture (SOA)** fue el estándar de oro para la integración empresarial. Sin embargo, con el auge de la nube y el DevOps, los **Microservicios** han reclamado el trono. {{< /notice >}} 
 
 ¿Es realmente una batalla donde uno debe morir, o son herramientas diferentes para problemas distintos?
 
