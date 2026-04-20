@@ -74,7 +74,70 @@ graph TD
 
 ```
 
-Una vez reducidos a su mínima expresión matemática (n=1), el algoritmo comienza a ascender combinando (`merge`). Así es como una tabla de estado final interactúa entre un arreglo izquierdo (`L`) y derecho (`R`) utilizando `Two-Pointers`:
+Una vez reducidos a su mínima expresión matemática (n=1), el algoritmo comienza a ascender combinando (`merge`). Así es como una tabla de estado final interactúa entre un arreglo izquierdo (`L`) y derecho (`R`) utilizando `Two-Pointers`.
+
+### Ejemplo Simplificado (n=6)
+
+Para una comprensión más rápida o si buscas un diagrama más compacto, aquí tienes el proceso gráfico de Merge Sort con un arreglo de 6 elementos (`[38, 27, 43, 3, 9, 82]`):
+
+```mermaid
+graph TD
+    classDef conquerNode fill:#d4edda,stroke:#28a745,color:#155724,stroke-width:2px;
+
+    subgraph Divide ["🎯 FASE: DIVIDE"]
+        Start["[38, 27, 43, 3, 9, 82] <br/> (n=6, mid=3)"]
+        L1["left: [38, 27, 43] <br/> (n=3, mid=1)"]
+        R1["right: [3, 9, 82] <br/> (n=3, mid=1)"]
+        
+        L2_a["[38] (n=1)"]
+        L2_b["[27, 43] <br/> (n=2, mid=1)"]
+        R2_a["[3] (n=1)"]
+        R2_b["[9, 82] <br/> (n=2, mid=1)"]
+        
+        L3_a["[27] (n=1)"]
+        L3_b["[43] (n=1)"]
+        R3_a["[9] (n=1)"]
+        R3_b["[82] (n=1)"]
+    end
+
+    subgraph Conquer ["✅ FASE: CONQUER (MERGE)"]
+        M_L2_b["[27, 43]"]:::conquerNode
+        M_R2_b["[9, 82]"]:::conquerNode
+        
+        M_L1["[27, 38, 43]"]:::conquerNode
+        M_R1["[3, 9, 82]"]:::conquerNode
+        
+        Final["[3, 9, 27, 38, 43, 82] <br/> Arreglo Ordenado"]:::conquerNode
+    end
+
+    %% Flujo de División
+    Start --> L1
+    Start --> R1
+    
+    L1 --> L2_a
+    L1 --> L2_b
+    R1 --> R2_a
+    R1 --> R2_b
+    
+    L2_b --> L3_a
+    L2_b --> L3_b
+    R2_b --> R3_a
+    R2_b --> R3_b
+    
+    %% Flujo de Conquista (Merge)
+    L3_a ==> M_L2_b
+    L3_b ==> M_L2_b
+    R3_a ==> M_R2_b
+    R3_b ==> M_R2_b
+    
+    L2_a ==> M_L1
+    M_L2_b ==> M_L1
+    R2_a ==> M_R1
+    M_R2_b ==> M_R1
+    
+    M_L1 ==> Final
+    M_R1 ==> Final
+```
 
 ## Implementación Básica en Go
 
