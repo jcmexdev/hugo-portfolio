@@ -28,6 +28,18 @@
   </a>
 </p>
 
+## 🏃‍♂️ Comando Rápido (Ejecución Local)
+
+Para ejecutar el servidor de desarrollo localmente (después de haber instalado las dependencias con `npm install`), utiliza el siguiente comando exacto:
+
+```bash
+npm run dev
+```
+
+Una vez que termine de compilar, abre tu navegador en **http://localhost:1313**
+
+---
+
 ## Table of Contents
 
 - [What's Included](#-whats-included)
