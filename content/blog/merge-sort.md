@@ -45,9 +45,32 @@ graph TD
     R2_b --> R3_3["[10] (n=1)"]
     R2_b --> R3_4["[19, 21] (n=2, mid=1)"]
     
-    %% Nivel 4
-    R3_4 --> R4_1["[19] (n=1)"]
-    R3_4 --> R4_2["[21] (n=1)"]
+    %% --- FASE DE CONQUISTA (MERGE) ---
+    %% Merge Nivel 4 a 3
+    R4_1 --> M_R3_4["[19, 21]"]
+    R4_2 --> M_R3_4
+    
+    %% Merge Nivel 3 a 2
+    L3_1 --> M_L2_a["[27, 38]"]
+    L3_2 --> M_L2_a
+    L3_3 --> M_L2_b["[3, 43]"]
+    L3_4 --> M_L2_b
+    
+    R3_1 --> M_R2_a["[9, 82]"]
+    R3_2 --> M_R2_a
+    R3_3 --> M_R2_b["[10, 19, 21]"]
+    M_R3_4 --> M_R2_b
+    
+    %% Merge Nivel 2 a 1
+    M_L2_a --> M_L1["[3, 27, 38, 43]"]
+    M_L2_b --> M_L1
+    
+    M_R2_a --> M_R1["[9, 10, 19, 21, 82]"]
+    M_R2_b --> M_R1
+    
+    %% Final Merge
+    M_L1 --> Final["[3, 9, 10, 19, 21, 27, 38, 43, 82] <br/> Arreglo Ordenado"]
+    M_R1 --> Final
 
 ```
 
