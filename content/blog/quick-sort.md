@@ -6,7 +6,7 @@ image: "/quick_sort_alt.png"
 tags: ["algorithms", "sorting", "Go", "programming"]
 ---
 
-El **Quick Sort** (u Ordenamiento Rápido) es, en la mayoría de los escenarios prácticos, el algoritmo de ordenamiento más veloz que existe. Creado por Tony Hoare en 1959, es el estándar de la industria y la fuerza motriz detrás de la función sort por defecto de casi cualquier lenguaje de programación moderno.
+> El **Quick Sort** (u Ordenamiento Rápido) es, en la mayoría de los escenarios prácticos, el algoritmo de ordenamiento más veloz que existe. Creado por Tony Hoare en 1959, es el estándar de la industria y la fuerza motriz detrás de la función sort por defecto de casi cualquier lenguaje de programación moderno.
 
 Si Insertion Sort era excelente para organizar tu mano de cartas una por una, Quick Sort brilla cuando tienes cajas repletas de miles de datos y necesitas catalogarlos todos a la velocidad de la luz.
 
