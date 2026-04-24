@@ -2,7 +2,7 @@
 title: "Búsqueda Binaria: Mucho más que 'Dividir y Vencerás'"
 date: 2026-04-24
 description: "Aprende cómo dominar la búsqueda binaria en Go, evitando errores comunes como el overflow de enteros y entendiendo sus variaciones avanzadas para entornos de alto rendimiento."
-image: "/binary_search_cover.png"
+image: "images/blog/binary_search_cover.png"
 tags: ["algorithms", "search", "Go", "backend"]
 ---
 

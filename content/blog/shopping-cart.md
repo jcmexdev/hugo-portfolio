@@ -1,14 +1,13 @@
 ---
-draft: true
+draft: false
 title: "App Carrito de Compras Simple"
 meta_title: "App Carrito de Compras Simple"
 description: "Descripción del Proyecto del App Carrito de Compras Simple"
 date: 2026-02-05T05:00:00Z
-image: "/images/image-placeholder.png"
+image: "images/blog/simple_shopping_cart_cover.jpg"
 categories: ["App", "React Native"]
 author: "Juan Carlos Garcia"
 tags: ["React Native", "Expo", "App", "Mobile"]
-draft: false
 ---
 
 ### Descripción del Proyecto
@@ -50,3 +49,37 @@ A nivel gráfico, todo ha sido estructurado en componentes y estilos estrictos d
 
 ### Código Fuente
 Esta aplicación móvil muestra el manejo robusto de estado local y patrones modernos de desarrollo móvil. El repositorio completo está disponible en GitHub.
+
+### Galería del Proyecto
+
+A continuación se muestran algunas capturas de pantalla de la aplicación en funcionamiento:
+
+<div class="row">
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_1.png" alt="Screen 1" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_2.png" alt="Screen 2" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_3.png" alt="Screen 3" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_4.png" alt="Screen 4" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_5.png" alt="Screen 5" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_6.png" alt="Screen 6" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_7.png" alt="Screen 7" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_8.png" alt="Screen 8" class="w-full rounded shadow" >}}
+  </div>
+  <div class="col-12 md:col-4 mb-4">
+    {{< img src="images/simple-shopping-cart/screen_9.png" alt="Screen 9" class="w-full rounded shadow" >}}
+  </div>
+</div>

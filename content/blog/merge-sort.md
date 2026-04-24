@@ -3,7 +3,7 @@ draft: true
 title: "Guía Definitiva de Merge Sort: El Algoritmo de Divide y Vencerás"
 date: 2026-04-20
 description: "Descubre todo sobre Merge Sort, su implementación en Go, y cómo optimizar su complejidad de espacio a nivel experto."
-image: "/merge_sort_cover.png"
+image: "images/blog/merge_sort_cover.png"
 tags: ["algorithms", "sorting", "Go", "programming"]
 ---
 

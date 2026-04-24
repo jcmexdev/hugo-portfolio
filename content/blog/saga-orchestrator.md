@@ -4,11 +4,10 @@ title: "Dominando la Consistencia Distribuida: Construyendo un Orquestador de Sa
 meta_title: "Caso de Estudio: Orquestador de Sagas | Senior Backend Engineer"
 description: "Análisis técnico profundo del Patrón Saga para microservicios usando Go, gRPC y Redis."
 date: 2026-02-01T05:00:00Z
-image: "/images/image-placeholder.png"
+image: "images/image-placeholder.png"
 categories: ["Case Study", "Sistemas Distribuidos"]
 author: "Juan Carlos Garcia"
 tags: ["Go", "Sistemas Distribuidos", "Microservicios", "Arquitectura de Software", "Saga Pattern"]
-draft: false
 ---
 
 {{< notice "info" >}} Este caso de estudio presenta un análisis técnico profundo del **Patrón Saga** para microservicios usando Go, gRPC y Redis. Exploraremos por qué las transacciones distribuidas requieren orquestación especializada en lugar de las tradicionales transacciones ACID del modelo monolítico. {{< /notice >}}

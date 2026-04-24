@@ -1,0 +1,10 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "image" }}
+{{ $class := .Get "class" }}
+{{ $img := resources.Get $src }}
+
+{{ if $img }}
+  <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" loading="lazy" />
+{{ else }}
+  <p style="color:red">Image not found: {{ $src }}</p>
+{{ end }}

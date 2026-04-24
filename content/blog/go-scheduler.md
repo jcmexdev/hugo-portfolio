@@ -3,7 +3,7 @@ draft: true
 title: "Go Scheduler: El Motor de Concurrencia Detrás de las Goroutines"
 date: 2026-04-24
 description: "Descubre cómo el runtime de Go gestiona miles de goroutines de forma eficiente mediante el modelo M-P-G y la técnica de Work Stealing."
-image: "/go_scheduler_cover.png"
+image: "images/blog/go_scheduler_cover.png"
 tags: ["Go", "concurrency", "backend", "internals"]
 ---
 

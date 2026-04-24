@@ -3,7 +3,7 @@ draft: true
 title: "Patrones de Resiliencia en Backend: Circuit Breaker, Retry y Fallback"
 date: 2026-04-24
 description: "Aprende a construir sistemas distribuidos robustos aplicando patrones de resiliencia para manejar fallos en cascada y errores transitorios."
-image: "/resilience_patterns_cover.png"
+image: "images/blog/resilience_patterns_cover.png"
 tags: ["architecture", "backend", "microservices", "Go"]
 ---
 

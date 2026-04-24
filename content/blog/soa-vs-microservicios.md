@@ -4,11 +4,10 @@ title: "SOA vs. Microservicios: La batalla de las arquitecturas ⚔️"
 meta_title: "SOA vs Microservicios | Arquitecturas de Software"
 description: "Análisis comparativo entre SOA y Microservicios: filosofía, ESB vs API Gateway e integración vs agilidad."
 date: 2026-03-13T00:26:19-06:00
-image: "/images/soa-vs-microservices.png"
+image: "images/soa-vs-microservices.png"
 categories: ["Arquitectura", "Backend"]
 author: "Juan Carlos Garcia"
 tags: ["SOA", "Microservicios", "Arquitectura de Software"]
-draft: false
 ---
 
 {{< notice "note" >}} En el ecosistema del desarrollo de software, pocos debates son tan intensos como la elección del estilo arquitectónico. Durante años, **Service-Oriented Architecture (SOA)** fue el estándar de oro para la integración empresarial. Sin embargo, con el auge de la nube y el DevOps, los **Microservicios** han reclamado el trono. {{< /notice >}} 

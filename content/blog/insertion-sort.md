@@ -3,7 +3,7 @@ draft: true
 title: "Guía Práctica de Insertion Sort: Eficiencia en Datos Casi Ordenados"
 date: 2026-04-20
 description: "Descubre cómo funciona Insertion Sort, un algoritmo fundamental. Visualiza su ejecución en Go y aprende en qué casos supera a gigantes computacionales como Merge Sort."
-image: "/insertion_sort_premium.png"
+image: "images/blog/insertion_sort_cover.png"
 tags: ["algorithms", "sorting", "Go", "programming"]
 ---
 
