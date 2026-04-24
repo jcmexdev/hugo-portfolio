@@ -1,8 +1,9 @@
 ---
+draft: true
 title: "Guía Práctica de Insertion Sort: Eficiencia en Datos Casi Ordenados"
 date: 2026-04-20
 description: "Descubre cómo funciona Insertion Sort, un algoritmo fundamental. Visualiza su ejecución en Go y aprende en qué casos supera a gigantes computacionales como Merge Sort."
-image: "/insertion_sort_cover_copy.png"
+image: "/insertion_sort_premium.png"
 tags: ["algorithms", "sorting", "Go", "programming"]
 ---
 
@@ -22,18 +23,31 @@ Toma el primer elemento pendiente, lo compara con los que ya tiene en el territo
 Para comprender este principio de encaje, tomemos el arreglo desordenado `[5, 4, 3, 6, 1, 2]`. Observa detenidamente cómo la barra lateral `|` representa nuestra línea divisoria:
 
 ```mermaid
-flowchart TD
-    Step0["<b>Inicio:</b><br/>[5] | 4, 3, 6, 1, 2"]
-    Step1["<b>Paso 1:</b> 4 es < 5 (desplaza 5, inserta 4)<br/>[4, 5] | 3, 6, 1, 2"]
-    Step2["<b>Paso 2:</b> 3 es < 4 y 5 (desplaza 4,5, inserta 3)<br/>[3, 4, 5] | 6, 1, 2"]
-    Step3["<b>Paso 3:</b> 6 es > 5 (se queda en su lugar)<br/>[3, 4, 5, 6] | 1, 2"]
-    Step4["<b>Paso 4:</b> 1 es < todos (desplaza 3,4,5,6, inserta 1 al inicio)<br/>[1, 3, 4, 5, 6] | 2"]
-    Step5["<b>Paso 5:</b> 2 es > 1 pero < los demás (desplaza 3,4,5,6, inserta 2)<br/>[1, 2, 3, 4, 5, 6] ✅"]
-
-    Step0 --> Step1 --> Step2 --> Step3 --> Step4 --> Step5
-
-    style Step0 fill:#f4f4f4,stroke:#333
-    style Step5 fill:#d4edda,stroke:#28a745,color:#155724
+graph TD
+    subgraph Pass_4 [Paso 4: El '1' busca su lugar (La esencia del algoritmo)]
+        direction TB
+        subgraph S1 [1. Identificar Key]
+            direction LR
+            a1[3] --- b1[4] --- c1[5] --- d1[6] --- e1[[1]] --- f1[2]
+            style e1 fill:#f96,stroke:#333
+        end
+        subgraph S2 [2. Desplaza y busca]
+            direction LR
+            a2[3] --- b2[4] --- c2[5] --- d2[_] --- e2[6] --- f2[2]
+            style d2 fill:#eee,stroke-dasharray: 5 5
+        end
+        subgraph S3 [3. Continúa el hueco]
+            direction LR
+            a3[_] --- b3[3] --- c3[4] --- d3[5] --- e3[6] --- f3[2]
+            style a3 fill:#eee,stroke-dasharray: 5 5
+        end
+        subgraph S4 [4. Inserción final]
+            direction LR
+            a4[[1]] --- b4[3] --- c4[4] --- d4[5] --- e4[6] --- f4[2]
+            style a4 fill:#28a745,color:#fff
+        end
+        S1 --> S2 --> S3 --> S4
+    end
 ```
 
 ## Implementación Base en Go
@@ -59,6 +73,18 @@ func InsertionSort(arr []int) {
     }
 }
 ```
+
+### Visual Desk Check: La anatomía del desplazamiento
+
+Para entender cómo `j` retrocede mientras `arr[j+1] = arr[j]` desplaza los valores, analicemos el rastro de variables cuando `i = 4` (apuntando al valor `1`):
+
+| Puntero `j` | `arr[j]` | ¿`arr[j] > key`? | Acción | Estado del Arreglo |
+| :--- | :--- | :--- | :--- | :--- |
+| `j = 3` | `6` | ✅ Sí (6 > 1) | `arr[4] = 6` | `[3, 4, 5, 6, 6, 2]` |
+| `j = 2` | `5` | ✅ Sí (5 > 1) | `arr[3] = 5` | `[3, 4, 5, 5, 6, 2]` |
+| `j = 1` | `4` | ✅ Sí (4 > 1) | `arr[2] = 4` | `[3, 4, 4, 5, 6, 2]` |
+| `j = 0` | `3` | ✅ Sí (3 > 1) | `arr[1] = 3` | `[3, 3, 4, 5, 6, 2]` |
+| `j = -1` | - | ❌ Salir ciclo | `arr[0] = 1` | `[1, 3, 4, 5, 6, 2]` |
 
 ## Análisis Matemático y Rendimiento
 

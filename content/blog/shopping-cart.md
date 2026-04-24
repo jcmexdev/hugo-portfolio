@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "App Carrito de Compras Simple"
 meta_title: "App Carrito de Compras Simple"
 description: "Descripción del Proyecto del App Carrito de Compras Simple"

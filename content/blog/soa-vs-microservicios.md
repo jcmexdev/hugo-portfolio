@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "SOA vs. Microservicios: La batalla de las arquitecturas ⚔️"
 meta_title: "SOA vs Microservicios | Arquitecturas de Software"
 description: "Análisis comparativo entre SOA y Microservicios: filosofía, ESB vs API Gateway e integración vs agilidad."

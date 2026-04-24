@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Dominando la Consistencia Distribuida: Construyendo un Orquestador de Sagas en Go"
 meta_title: "Caso de Estudio: Orquestador de Sagas | Senior Backend Engineer"
 description: "Análisis técnico profundo del Patrón Saga para microservicios usando Go, gRPC y Redis."

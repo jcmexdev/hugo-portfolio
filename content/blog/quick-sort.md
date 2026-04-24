@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Guía Práctica de Quick Sort: El Rey del 'Divide y Vencerás'"
 date: 2026-04-20
 description: "Aprende a dominar Quick Sort, el algoritmo de ordenamiento más veloz en la práctica. Descubre cómo funciona su pivote, visualiza su árbol de ejecución y mira su implementación en Go."

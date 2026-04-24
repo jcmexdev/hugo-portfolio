@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Time Complexity y Big O: Prediciendo el Futuro de tu Código"
 date: 2026-04-20
 description: "Aprende qué es la Complejidad Temporal, cómo la notación Big O te ayuda a predecir la escalabilidad técnica y por qué los ingenieros senior jamás miden el rendimiento con el reloj."
